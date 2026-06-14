@@ -3,12 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Faultline — Product Intelligence Platform</title>
-<script src="[cdnjs.cloudflare.com](https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js)"></script>
-<script src="[cdnjs.cloudflare.com](https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js)"></script>
-<script src="[cdnjs.cloudflare.com](https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js)"></script>
+<title>Faultline â€” Product Intelligence Platform</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
 <style>
-  /* ── TOKENS ── */
+  /* â”€â”€ TOKENS â”€â”€ */
   :root {
     --void: #0A0B0F;
     --surface: #111318;
@@ -43,9 +43,9 @@
     min-height: 100vh;
   }
 
-  /* ══════════════════════════════════════
+  /* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
      AUTH SCREEN
-  ══════════════════════════════════════ */
+  â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
   #auth-screen {
     position: fixed;
     inset: 0;
@@ -229,7 +229,7 @@
   }
   .auth-demo-btn:hover { border-color: var(--border-hi); color: var(--ink); }
 
-  /* ── LAYOUT ── */
+  /* â”€â”€ LAYOUT â”€â”€ */
   .app { display:flex; height:100vh; overflow:hidden; }
   .sidebar {
     width: 220px;
@@ -242,7 +242,7 @@
   }
   .main { flex:1; overflow-y:auto; background:var(--void); }
 
-  /* ── SIDEBAR ── */
+  /* â”€â”€ SIDEBAR â”€â”€ */
   .logo {
     padding: 20px 20px 18px;
     border-bottom: 1px solid var(--border);
@@ -322,7 +322,7 @@
   }
   .nav-badge.purple { background: var(--purple); }
 
-  /* ── USER BADGE IN SIDEBAR ── */
+  /* â”€â”€ USER BADGE IN SIDEBAR â”€â”€ */
   .sidebar-user {
     padding: 14px 16px;
     border-top: 1px solid var(--border);
@@ -361,7 +361,7 @@
   }
   .su-logout:hover { color: var(--fault); }
 
-  /* ── PAGE HEADER ── */
+  /* â”€â”€ PAGE HEADER â”€â”€ */
   .page-header {
     padding: 28px 32px 0;
     border-bottom: 1px solid var(--border);
@@ -384,12 +384,12 @@
   .tab-btn:hover { color: var(--ink); }
   .tab-btn.active { color: var(--ink); border-bottom-color: var(--fault); }
 
-  /* ── CONTENT ── */
+  /* â”€â”€ CONTENT â”€â”€ */
   .content { padding: 28px 32px; }
   .section { display: none; }
   .section.active { display: block; }
 
-  /* ── STAT CARDS ── */
+  /* â”€â”€ STAT CARDS â”€â”€ */
   .stats-row { display: grid; grid-template-columns: repeat(4,1fr); gap: 16px; margin-bottom: 24px; }
   .stat-card {
     background: var(--panel);
@@ -419,7 +419,7 @@
   .stat-val.purple { color: var(--purple); }
   .stat-delta { font-size: 12px; color: var(--ink-dim); margin-top: 8px; }
 
-  /* ── CHARTS ── */
+  /* â”€â”€ CHARTS â”€â”€ */
   .charts-row { display: grid; grid-template-columns: 2fr 1fr; gap: 16px; margin-bottom: 24px; }
   .chart-card {
     background: var(--panel);
@@ -431,7 +431,7 @@
   .chart-subtitle { font-size: 11px; color: var(--ink-dim); font-weight: 400; margin-left: 8px; }
   .chart-wrap { position: relative; }
 
-  /* ── TABLE ── */
+  /* â”€â”€ TABLE â”€â”€ */
   .table-card {
     background: var(--panel);
     border: 1px solid var(--border);
@@ -513,9 +513,9 @@
   .pill.red { background: var(--fault-dim); color: var(--fault); }
   .pill.blue { background: var(--blue-dim); color: var(--blue); }
   .pill.purple { background: var(--purple-dim); color: var(--purple); }
-  .pill::before { content: '●'; font-size: 8px; }
+  .pill::before { content: 'â—'; font-size: 8px; }
 
-  /* ── PRODUCT GRID ── */
+  /* â”€â”€ PRODUCT GRID â”€â”€ */
   .product-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px,1fr)); gap: 16px; margin-bottom: 24px; }
   .product-card {
     background: var(--panel);
@@ -544,7 +544,7 @@
     border-radius: 20px;
   }
 
-  /* ── ML INTELLIGENCE PANEL ── */
+  /* â”€â”€ ML INTELLIGENCE PANEL â”€â”€ */
   .ml-card {
     background: var(--panel);
     border: 1px solid var(--purple);
@@ -606,7 +606,7 @@
   }
   .ml-conf-label { font-size: 10px; color: var(--ink-muted); }
 
-  /* ── ML SUGGESTION BANNER ── */
+  /* â”€â”€ ML SUGGESTION BANNER â”€â”€ */
   .ml-suggestion {
     background: var(--purple-dim);
     border: 1px solid var(--purple);
@@ -623,10 +623,10 @@
   .ml-suggestion-title { font-size: 12px; font-weight: 700; color: var(--purple); margin-bottom: 3px; }
   .ml-suggestion-text { font-size: 12px; color: var(--ink-dim); }
 
-  /* ── FIELD CASES TABLE ── */
+  /* â”€â”€ FIELD CASES TABLE â”€â”€ */
   .case-row-resolved { background: rgba(34,197,94,0.04); }
 
-  /* ── FORM ── */
+  /* â”€â”€ FORM â”€â”€ */
   .form-card {
     background: var(--panel);
     border: 1px solid var(--border);
@@ -685,7 +685,7 @@
   }
   .submit-btn:hover { opacity: 0.88; }
 
-  /* ── UPLOAD ZONE ── */
+  /* â”€â”€ UPLOAD ZONE â”€â”€ */
   .upload-zone {
     border: 2px dashed var(--border);
     border-radius: var(--r-lg);
@@ -702,7 +702,7 @@
   .upload-sub { font-size: 12px; color: var(--ink-dim); }
   #file-input { display: none; }
 
-  /* ── DATA PREVIEW ── */
+  /* â”€â”€ DATA PREVIEW â”€â”€ */
   .data-preview {
     background: var(--panel);
     border: 1px solid var(--border);
@@ -724,7 +724,7 @@
   .preview-meta { font-size: 11px; color: var(--ink-dim); }
   .preview-table-wrap { overflow-x: auto; max-height: 300px; overflow-y: auto; }
 
-  /* ── MODAL ── */
+  /* â”€â”€ MODAL â”€â”€ */
   .modal-bg {
     display: none;
     position: fixed; inset: 0;
@@ -749,7 +749,7 @@
   .modal-close { background: none; border: none; color: var(--ink-dim); cursor: pointer; font-size: 18px; padding: 4px; }
   .modal-close:hover { color: var(--ink); }
 
-  /* ── TOAST ── */
+  /* â”€â”€ TOAST â”€â”€ */
   .toast {
     position: fixed;
     bottom: 24px; right: 24px;
@@ -774,7 +774,7 @@
   .toast.purple { border-color: var(--purple); }
   .toast-icon { font-size: 16px; }
 
-  /* ── EMPTY STATE ── */
+  /* â”€â”€ EMPTY STATE â”€â”€ */
   .empty-state {
     text-align: center;
     padding: 60px 20px;
@@ -784,7 +784,7 @@
   .empty-title { font-size: 15px; font-weight: 600; color: var(--ink); margin-bottom: 6px; }
   .empty-sub { font-size: 13px; }
 
-  /* ── RESPONSIVE ── */
+  /* â”€â”€ RESPONSIVE â”€â”€ */
   @media (max-width: 900px) {
     .stats-row { grid-template-columns: repeat(2,1fr); }
     .charts-row { grid-template-columns: 1fr; }
@@ -798,12 +798,12 @@
     .page-header { padding: 20px 16px 0; }
   }
 
-  /* ── SCROLLBAR ── */
+  /* â”€â”€ SCROLLBAR â”€â”€ */
   ::-webkit-scrollbar { width: 6px; height: 6px; }
   ::-webkit-scrollbar-track { background: transparent; }
   ::-webkit-scrollbar-thumb { background: var(--border-hi); border-radius: 3px; }
 
-  /* ── PRODUCT DETAIL MODAL ── */
+  /* â”€â”€ PRODUCT DETAIL MODAL â”€â”€ */
   .pd-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 20px; }
   .pd-field { background: var(--void); border-radius: var(--r); padding: 12px; }
   .pd-field-label { font-size: 10px; text-transform: uppercase; letter-spacing: 0.7px; color: var(--ink-muted); margin-bottom: 4px; }
@@ -812,10 +812,10 @@
   .pd-issue-row { display: flex; gap: 12px; align-items: flex-start; padding: 10px 0; border-bottom: 1px solid var(--border); }
   .pd-issue-row:last-child { border-bottom: none; }
 
-  /* ── ADD PRODUCT FORM ── */
+  /* â”€â”€ ADD PRODUCT FORM â”€â”€ */
   .add-prod-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
 
-  /* ── VIEW TOGGLE ── */
+  /* â”€â”€ VIEW TOGGLE â”€â”€ */
   .view-toggle { display: flex; gap: 4px; }
   .vt-btn {
     padding: 6px 10px;
@@ -829,12 +829,12 @@
   }
   .vt-btn.active { background: var(--fault-dim); border-color: var(--fault); color: var(--fault); }
 
-  /* ── LIST VIEW ── */
+  /* â”€â”€ LIST VIEW â”€â”€ */
   #product-list-view { display: none; margin-bottom: 24px; }
   #product-list-view.show { display: block; }
   #product-grid.hide { display: none; }
 
-  /* ── CATEGORY FILTER PILLS ── */
+  /* â”€â”€ CATEGORY FILTER PILLS â”€â”€ */
   .cat-filters { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 16px; }
   .cat-pill {
     padding: 5px 14px;
@@ -850,7 +850,7 @@
   .cat-pill:hover { border-color: var(--border-hi); color: var(--ink); }
   .cat-pill.active { background: var(--fault-dim); border-color: var(--fault); color: var(--fault); }
 
-  /* ── TIMELINE ── */
+  /* â”€â”€ TIMELINE â”€â”€ */
   .tl-item { display: flex; gap: 14px; margin-bottom: 20px; }
   .tl-dot {
     width: 10px; height: 10px;
@@ -866,7 +866,7 @@
   .tl-title { font-size: 13px; font-weight: 600; margin-bottom: 2px; }
   .tl-meta { font-size: 11px; color: var(--ink-dim); }
 
-  /* ── RESOLVE MODAL ── */
+  /* â”€â”€ RESOLVE MODAL â”€â”€ */
   .resolve-steps { }
   .resolve-step {
     background: var(--void);
@@ -892,7 +892,7 @@
   }
   .resolve-step-text { font-size: 12px; color: var(--ink-dim); line-height: 1.6; }
 
-  /* ── PERMISSION LOCK ── */
+  /* â”€â”€ PERMISSION LOCK â”€â”€ */
   .perm-lock {
     display: flex;
     align-items: center;
@@ -908,9 +908,9 @@
 </head>
 <body>
 
-<!-- ══════════════════════════════════════
+<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
      AUTH SCREEN
-══════════════════════════════════════ -->
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
 <div id="auth-screen">
   <div class="auth-wrap">
     <div class="auth-logo">
@@ -938,32 +938,32 @@
         </div>
         <div class="auth-field">
           <label class="auth-label">Password</label>
-          <input type="password" class="auth-input" id="login-password" placeholder="••••••••" autocomplete="current-password" onkeydown="if(event.key==='Enter')doLogin()">
+          <input type="password" class="auth-input" id="login-password" placeholder="â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢" autocomplete="current-password" onkeydown="if(event.key==='Enter')doLogin()">
         </div>
         <button class="auth-btn" onclick="doLogin()">Sign In</button>
         <div class="auth-divider">or try a demo account</div>
         <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px">
-          <button class="auth-demo-btn" onclick="demoLogin('user')">👤 Demo User</button>
-          <button class="auth-demo-btn" onclick="demoLogin('company')">🏢 Demo Company</button>
+          <button class="auth-demo-btn" onclick="demoLogin('user')">ðŸ‘¤ Demo User</button>
+          <button class="auth-demo-btn" onclick="demoLogin('company')">ðŸ¢ Demo Company</button>
         </div>
       </div>
 
       <!-- REGISTER -->
       <div class="auth-section" id="auth-register">
         <div class="auth-title">Create account</div>
-        <div class="auth-sub">Join Faultline — free to start</div>
+        <div class="auth-sub">Join Faultline â€” free to start</div>
         <div class="auth-err" id="reg-err"></div>
         <div class="auth-type-row">
           <div>
             <input type="radio" name="acc-type" class="auth-type-opt" value="user" id="at-user" checked>
             <label class="auth-type-label" for="at-user">
-              <span class="at-icon">👤</span>Individual User
+              <span class="at-icon">ðŸ‘¤</span>Individual User
             </label>
           </div>
           <div>
             <input type="radio" name="acc-type" class="auth-type-opt" value="company" id="at-company">
             <label class="auth-type-label" for="at-company">
-              <span class="at-icon">🏢</span>Company / Team
+              <span class="at-icon">ðŸ¢</span>Company / Team
             </label>
           </div>
         </div>
@@ -982,9 +982,9 @@
         <div class="auth-field" id="reg-company-field" style="display:none">
           <label class="auth-label">Company Size</label>
           <select class="auth-input" id="reg-size">
-            <option>1–10 employees</option>
-            <option>11–50 employees</option>
-            <option>51–200 employees</option>
+            <option>1â€“10 employees</option>
+            <option>11â€“50 employees</option>
+            <option>51â€“200 employees</option>
             <option>200+ employees</option>
           </select>
         </div>
@@ -994,9 +994,9 @@
   </div>
 </div>
 
-<!-- ══════════════════════════════════════
+<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
      MAIN APP
-══════════════════════════════════════ -->
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
 <div class="app" id="main-app" style="display:none">
   <!-- SIDEBAR -->
   <aside class="sidebar">
@@ -1013,36 +1013,36 @@
       <div class="nav-section">
         <div class="nav-label">Overview</div>
         <div class="nav-item active" onclick="showSection('dashboard')">
-          <span class="nav-icon">⬡</span><span>Dashboard</span>
+          <span class="nav-icon">â¬¡</span><span>Dashboard</span>
         </div>
       </div>
       <div class="nav-section">
         <div class="nav-label">Products</div>
         <div class="nav-item" onclick="showSection('products')">
-          <span class="nav-icon">◫</span><span>Catalog</span>
+          <span class="nav-icon">â—«</span><span>Catalog</span>
         </div>
         <div class="nav-item" onclick="showSection('issues')">
-          <span class="nav-icon">⚡</span><span>Issues</span>
+          <span class="nav-icon">âš¡</span><span>Issues</span>
           <span class="nav-badge" id="issue-count">0</span>
         </div>
       </div>
       <div class="nav-section">
         <div class="nav-label">Intelligence</div>
         <div class="nav-item" onclick="showSection('ml')">
-          <span class="nav-icon">✦</span><span>ML Insights</span>
+          <span class="nav-icon">âœ¦</span><span>ML Insights</span>
           <span class="nav-badge purple" id="ml-badge">0</span>
         </div>
         <div class="nav-item" onclick="showSection('fieldcases')">
-          <span class="nav-icon">📋</span><span>Field Cases</span>
+          <span class="nav-icon">ðŸ“‹</span><span>Field Cases</span>
         </div>
       </div>
       <div class="nav-section">
         <div class="nav-label">Analysis</div>
         <div class="nav-item" onclick="showSection('sales')">
-          <span class="nav-icon">◈</span><span>Sales</span>
+          <span class="nav-icon">â—ˆ</span><span>Sales</span>
         </div>
         <div class="nav-item" onclick="showSection('import')">
-          <span class="nav-icon">↑</span><span>Import Data</span>
+          <span class="nav-icon">â†‘</span><span>Import Data</span>
         </div>
       </div>
     </nav>
@@ -1051,17 +1051,17 @@
     <div class="sidebar-user">
       <div class="su-avatar" id="su-avatar">?</div>
       <div class="su-info">
-        <div class="su-name" id="su-name">—</div>
-        <div class="su-role" id="su-role">—</div>
+        <div class="su-name" id="su-name">â€”</div>
+        <div class="su-role" id="su-role">â€”</div>
       </div>
-      <button class="su-logout" onclick="doLogout()" title="Sign out">⏻</button>
+      <button class="su-logout" onclick="doLogout()" title="Sign out">â»</button>
     </div>
   </aside>
 
   <!-- MAIN -->
   <main class="main">
 
-    <!-- ── DASHBOARD ── -->
+    <!-- â”€â”€ DASHBOARD â”€â”€ -->
     <div id="sec-dashboard" class="section active">
       <div class="page-header">
         <div class="page-title">Dashboard</div>
@@ -1096,7 +1096,7 @@
 
         <div class="charts-row">
           <div class="chart-card">
-            <div class="chart-title">Sales by Category <span class="chart-subtitle">— from data</span></div>
+            <div class="chart-title">Sales by Category <span class="chart-subtitle">â€” from data</span></div>
             <div class="chart-wrap" style="height:220px"><canvas id="chart-sales"></canvas></div>
           </div>
           <div class="chart-card">
@@ -1131,7 +1131,7 @@
       </div>
     </div>
 
-    <!-- ── PRODUCTS ── -->
+    <!-- â”€â”€ PRODUCTS â”€â”€ -->
     <div id="sec-products" class="section">
       <div class="page-header">
         <div class="page-title">Product Catalog</div>
@@ -1146,16 +1146,16 @@
       <div class="content">
         <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:16px;flex-wrap:wrap;">
           <div style="display:flex;gap:8px;align-items:center;flex:1;flex-wrap:wrap;">
-            <input type="text" class="search-box" placeholder="Search by name, SKU, or category…" id="product-search" oninput="renderProductGrid()" style="width:260px">
+            <input type="text" class="search-box" placeholder="Search by name, SKU, or categoryâ€¦" id="product-search" oninput="renderProductGrid()" style="width:260px">
             <div class="cat-filters" id="cat-filters"></div>
           </div>
           <div style="display:flex;gap:8px;align-items:center;">
             <div class="view-toggle">
-              <button class="vt-btn active" id="vt-grid" onclick="setView('grid')" title="Grid view">⊞</button>
-              <button class="vt-btn" id="vt-list" onclick="setView('list')" title="List view">☰</button>
+              <button class="vt-btn active" id="vt-grid" onclick="setView('grid')" title="Grid view">âŠž</button>
+              <button class="vt-btn" id="vt-list" onclick="setView('list')" title="List view">â˜°</button>
             </div>
             <button class="btn btn-primary" id="btn-add-product" onclick="openAddProduct()">+ Add Product</button>
-            <button class="btn" onclick="showSection('import')">↑ Import</button>
+            <button class="btn" onclick="showSection('import')">â†‘ Import</button>
           </div>
         </div>
         <div id="product-grid" class="product-grid"></div>
@@ -1170,7 +1170,7 @@
       </div>
     </div>
 
-    <!-- ── ISSUES ── -->
+    <!-- â”€â”€ ISSUES â”€â”€ -->
     <div id="sec-issues" class="section">
       <div class="page-header">
         <div class="page-title">Issue Reports</div>
@@ -1220,7 +1220,7 @@
       </div>
     </div>
 
-    <!-- ── ML INSIGHTS ── -->
+    <!-- â”€â”€ ML INSIGHTS â”€â”€ -->
     <div id="sec-ml" class="section">
       <div class="page-header">
         <div class="page-title">ML Insights</div>
@@ -1256,7 +1256,7 @@
 
         <div class="charts-row">
           <div class="chart-card">
-            <div class="chart-title">Resolution Time by Issue Type <span class="chart-subtitle">— from field cases</span></div>
+            <div class="chart-title">Resolution Time by Issue Type <span class="chart-subtitle">â€” from field cases</span></div>
             <div style="height:220px"><canvas id="chart-restime"></canvas></div>
           </div>
           <div class="chart-card">
@@ -1266,10 +1266,10 @@
         </div>
 
         <div class="ml-card" id="ml-insights-panel">
-          <div class="ml-card-title">✦ Field Intelligence Patterns</div>
+          <div class="ml-card-title">âœ¦ Field Intelligence Patterns</div>
           <div id="ml-insights-list">
             <div style="color:var(--ink-muted);font-size:13px;text-align:center;padding:20px">
-              Resolve issues to begin learning patterns. Navigate to Issues → mark as Resolved → add fix notes.
+              Resolve issues to begin learning patterns. Navigate to Issues â†’ mark as Resolved â†’ add fix notes.
             </div>
           </div>
         </div>
@@ -1284,18 +1284,18 @@
               <th>Issue Type</th><th>Category</th><th>Fix</th><th>Confidence</th><th>Cases</th><th>Avg Days</th>
             </tr></thead>
             <tbody id="ml-patterns-table">
-              <tr><td colspan="6" style="text-align:center;color:var(--ink-muted);padding:32px">No patterns yet — resolve field issues to populate</td></tr>
+              <tr><td colspan="6" style="text-align:center;color:var(--ink-muted);padding:32px">No patterns yet â€” resolve field issues to populate</td></tr>
             </tbody>
           </table>
         </div>
       </div>
     </div>
 
-    <!-- ── FIELD CASES ── -->
+    <!-- â”€â”€ FIELD CASES â”€â”€ -->
     <div id="sec-fieldcases" class="section">
       <div class="page-header">
         <div class="page-title">Field Cases</div>
-        <div class="page-sub">Resolved repair log — every case feeds the ML engine</div>
+        <div class="page-sub">Resolved repair log â€” every case feeds the ML engine</div>
         <div class="page-tabs">
           <button class="tab-btn active">All Cases</button>
         </div>
@@ -1318,7 +1318,7 @@
       </div>
     </div>
 
-    <!-- ── SALES ── -->
+    <!-- â”€â”€ SALES â”€â”€ -->
     <div id="sec-sales" class="section">
       <div class="page-header">
         <div class="page-title">Sales Analysis</div>
@@ -1370,7 +1370,7 @@
       </div>
     </div>
 
-    <!-- ── IMPORT ── -->
+    <!-- â”€â”€ IMPORT â”€â”€ -->
     <div id="sec-import" class="section">
       <div class="page-header">
         <div class="page-title">Import Data</div>
@@ -1382,9 +1382,9 @@
           ondragover="event.preventDefault();this.classList.add('drag')"
           ondragleave="this.classList.remove('drag')"
           ondrop="handleDrop(event)">
-          <div class="upload-icon">⬆</div>
+          <div class="upload-icon">â¬†</div>
           <div class="upload-title">Drop your file here, or click to browse</div>
-          <div class="upload-sub">Supports .xlsx, .xls, .csv — columns: Name, SKU, Category, Price, Stock, Revenue (optional)</div>
+          <div class="upload-sub">Supports .xlsx, .xls, .csv â€” columns: Name, SKU, Category, Price, Stock, Revenue (optional)</div>
         </div>
         <input type="file" id="file-input" accept=".xlsx,.xls,.csv" onchange="handleFile(event)">
         <div class="data-preview" id="data-preview">
@@ -1416,7 +1416,7 @@
   <div class="modal" style="width:560px">
     <div class="modal-head">
       <div class="modal-title" id="pd-modal-title">Product Detail</div>
-      <button class="modal-close" onclick="closeModal('product-detail-modal')">✕</button>
+      <button class="modal-close" onclick="closeModal('product-detail-modal')">âœ•</button>
     </div>
     <div id="pd-modal-body"></div>
   </div>
@@ -1427,7 +1427,7 @@
   <div class="modal" style="width:560px">
     <div class="modal-head">
       <div class="modal-title" id="ap-modal-title">Add New Product</div>
-      <button class="modal-close" onclick="closeModal('add-product-modal')">✕</button>
+      <button class="modal-close" onclick="closeModal('add-product-modal')">âœ•</button>
     </div>
     <div class="add-prod-grid">
       <div class="form-row" style="grid-column:1/-1">
@@ -1466,7 +1466,7 @@
       </div>
       <div class="form-row" style="grid-column:1/-1">
         <label class="form-label">Description</label>
-        <textarea class="form-textarea" id="ap-desc" placeholder="Brief product description…" style="min-height:72px"></textarea>
+        <textarea class="form-textarea" id="ap-desc" placeholder="Brief product descriptionâ€¦" style="min-height:72px"></textarea>
       </div>
     </div>
     <input type="hidden" id="ap-edit-id">
@@ -1478,12 +1478,12 @@
 <div class="modal-bg" id="report-modal">
   <div class="modal">
     <div class="modal-head">
-      <div class="modal-title">⚡ Report Product Issue</div>
-      <button class="modal-close" onclick="closeModal('report-modal')">✕</button>
+      <div class="modal-title">âš¡ Report Product Issue</div>
+      <button class="modal-close" onclick="closeModal('report-modal')">âœ•</button>
     </div>
     <!-- ML suggestion banner -->
     <div class="ml-suggestion" id="ml-issue-suggestion">
-      <span class="ml-suggestion-icon">✦</span>
+      <span class="ml-suggestion-icon">âœ¦</span>
       <div class="ml-suggestion-body">
         <div class="ml-suggestion-title">ML Suggestion</div>
         <div class="ml-suggestion-text" id="ml-suggestion-text"></div>
@@ -1492,7 +1492,7 @@
     <div class="form-row">
       <label class="form-label">Product</label>
       <select class="form-select" id="issue-product" onchange="mlSuggestOnProduct()">
-        <option value="">Select product…</option>
+        <option value="">Select productâ€¦</option>
       </select>
     </div>
     <div class="form-row">
@@ -1510,7 +1510,7 @@
     </div>
     <div class="form-row">
       <label class="form-label">Description</label>
-      <textarea class="form-textarea" id="issue-desc" placeholder="Describe the issue in detail…"></textarea>
+      <textarea class="form-textarea" id="issue-desc" placeholder="Describe the issue in detailâ€¦"></textarea>
     </div>
     <div class="form-row">
       <label class="form-label">Severity</label>
@@ -1529,8 +1529,8 @@
 <div class="modal-bg" id="resolve-modal">
   <div class="modal" style="width:520px">
     <div class="modal-head">
-      <div class="modal-title">✓ Resolve & Log Case</div>
-      <button class="modal-close" onclick="closeModal('resolve-modal')">✕</button>
+      <div class="modal-title">âœ“ Resolve & Log Case</div>
+      <button class="modal-close" onclick="closeModal('resolve-modal')">âœ•</button>
     </div>
     <input type="hidden" id="resolve-issue-id">
     <div style="background:var(--void);border-radius:var(--r);padding:14px;margin-bottom:20px;font-size:13px;color:var(--ink-dim)" id="resolve-issue-preview"></div>
@@ -1540,7 +1540,7 @@
     </div>
     <!-- ML suggested fix -->
     <div class="ml-suggestion" id="ml-resolve-suggestion" style="margin-bottom:16px">
-      <span class="ml-suggestion-icon">✦</span>
+      <span class="ml-suggestion-icon">âœ¦</span>
       <div class="ml-suggestion-body">
         <div class="ml-suggestion-title">ML Suggested Fix</div>
         <div class="ml-suggestion-text" id="ml-resolve-text"></div>
@@ -1570,7 +1570,7 @@
         <option>Unknown</option>
       </select>
     </div>
-    <button class="submit-btn" style="background:var(--green)" onclick="resolveIssue()">✓ Mark Resolved & Log to ML</button>
+    <button class="submit-btn" style="background:var(--green)" onclick="resolveIssue()">âœ“ Mark Resolved & Log to ML</button>
   </div>
 </div>
 
@@ -1581,45 +1581,32 @@
 </div>
 
 <script>
-// ══════════════════════════════════════════════════════════════
-//  MINI-JWT  (client-side simulation — in production, do this server-side)
+// â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+//  MINI-JWT  (client-side simulation â€” in production, do this server-side)
 //  Uses HMAC-SHA256 via SubtleCrypto
-// ══════════════════════════════════════════════════════════════
-const JWT_SECRET = 'faultline-jwt-secret-2025';
-
-async function hmacSign(data) {
-  const enc = new TextEncoder();
-  const key = await crypto.subtle.importKey(
-    'raw', enc.encode(JWT_SECRET),
-    { name: 'HMAC', hash: 'SHA-256' }, false, ['sign']
-  );
-  const sig = await crypto.subtle.sign('HMAC', key, enc.encode(data));
-  return btoa(String.fromCharCode(...new Uint8Array(sig)))
-    .replace(/\+/g,'-').replace(/\//g,'_').replace(/=/g,'');
+// â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+// Local demo token helpers. This is client-side demo auth only; real apps should authenticate on a server.
+const TOKEN_TTL = 8 * 60 * 60 * 1000;
+function encodeToken(payload) {
+  return btoa(unescape(encodeURIComponent(JSON.stringify(payload))));
 }
-
+function decodeToken(token) {
+  try { return JSON.parse(decodeURIComponent(escape(atob(token)))); }
+  catch(e) { return null; }
+}
 async function jwtCreate(payload) {
-  const header = btoa(JSON.stringify({ alg:'HS256', typ:'JWT' }));
-  const body   = btoa(JSON.stringify(payload));
-  const sig    = await hmacSign(header + '.' + body);
-  return header + '.' + body + '.' + sig;
+  return encodeToken(payload);
 }
-
 async function jwtVerify(token) {
-  try {
-    const parts = token.split('.');
-    if (parts.length !== 3) return null;
-    const expected = await hmacSign(parts[0] + '.' + parts[1]);
-    if (expected !== parts[2]) return null;
-    const payload = JSON.parse(atob(parts[1]));
-    if (payload.exp && Date.now() > payload.exp) return null;
-    return payload;
-  } catch(e) { return null; }
+  const payload = decodeToken(token);
+  if (!payload) return null;
+  if (payload.exp && Date.now() > payload.exp) return null;
+  return payload;
 }
 
-// ══════════════════════════════════════════════════════════════
+// â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 //  USER STORE  (localStorage simulation)
-// ══════════════════════════════════════════════════════════════
+// â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 function getUsers() {
   try { return JSON.parse(localStorage.getItem('fl_users') || '[]'); } catch(e) { return []; }
 }
@@ -1630,15 +1617,15 @@ function initDefaultUsers() {
   const emails = users.map(u => u.email);
   const defaults = [
     { id:'U001', name:'Demo User', email:'user@demo.com', password:'demo123', type:'user', createdAt: Date.now() },
-    { id:'U002', name:'Acme Corp', email:'company@demo.com', password:'demo123', type:'company', size:'51–200 employees', createdAt: Date.now() }
+    { id:'U002', name:'Acme Corp', email:'company@demo.com', password:'demo123', type:'company', size:'51â€“200 employees', createdAt: Date.now() }
   ];
   defaults.forEach(function(d){ if(!emails.includes(d.email)) users.push(d); });
   saveUsers(users);
 }
 
-// ══════════════════════════════════════════════════════════════
+// â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 //  AUTH STATE
-// ══════════════════════════════════════════════════════════════
+// â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 let currentUser = null;
 
 async function tryAutoLogin() {
@@ -1743,9 +1730,9 @@ function switchAuthTab(tab) {
   });
 }
 
-// ══════════════════════════════════════════════════════════════
+// â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 //  APP BOOT
-// ══════════════════════════════════════════════════════════════
+// â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 function bootApp() {
   document.getElementById('auth-screen').classList.add('hidden');
   document.getElementById('main-app').style.display = 'flex';
@@ -1758,7 +1745,7 @@ function bootApp() {
   document.getElementById('su-name').textContent = currentUser.name;
   document.getElementById('su-role').textContent = isCompany ? 'Company Account' : 'Individual User';
   document.getElementById('dash-welcome').textContent =
-    'Welcome back, ' + currentUser.name + ' · ' + (isCompany ? 'Company dashboard' : 'Personal workspace');
+    'Welcome back, ' + currentUser.name + ' Â· ' + (isCompany ? 'Company dashboard' : 'Personal workspace');
 
   // Restrict add-product to company or admin
   const canAdd = isCompany;
@@ -1776,13 +1763,13 @@ function bootApp() {
   setTimeout(renderCharts, 100);
 }
 
-// ══════════════════════════════════════════════════════════════
+// â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 //  STATE
-// ══════════════════════════════════════════════════════════════
+// â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 let products = [];
 let issues   = [];
 let rawData  = [];
-let fieldCases = [];         // resolved cases → ML training data
+let fieldCases = [];         // resolved cases â†’ ML training data
 let mlPatterns = {};         // learned patterns
 let mlSuggestionsCount = 0;
 let currentIssueTab = 'all';
@@ -1792,12 +1779,12 @@ let charts = {};
 
 const COLORS = ['#FF3D2E','#F5A623','#3B82F6','#22C55E','#A855F7','#EC4899','#14B8A6','#F97316'];
 const CAT_ICONS = {
-  Electronics:'🔌', Apparel:'👕', 'Home & Garden':'🌿', Sports:'⚽',
-  Beauty:'✨', Food:'🍎', Furniture:'🛋️', Toys:'🧸', Books:'📚',
-  Tools:'🔧', General:'📦'
+  Electronics:'ðŸ”Œ', Apparel:'ðŸ‘•', 'Home & Garden':'ðŸŒ¿', Sports:'âš½',
+  Beauty:'âœ¨', Food:'ðŸŽ', Furniture:'ðŸ›‹ï¸', Toys:'ðŸ§¸', Books:'ðŸ“š',
+  Tools:'ðŸ”§', General:'ðŸ“¦'
 };
 
-// ── SEED DATA ──
+// â”€â”€ SEED DATA â”€â”€
 const SEED_PRODUCTS = [
   { id:'PRD-0001', name:'AuraSound Pro X', sku:'ASP-001', category:'Electronics', price:249.99, stock:142, revenue:18749, status:'Active', description:'Premium wireless noise-cancelling headphones with 40hr battery life and spatial audio.', issues:1 },
   { id:'PRD-0002', name:'FlexRun 500 Trainers', sku:'FRN-500', category:'Sports', price:119.95, stock:310, revenue:22190, status:'Active', description:'Lightweight running shoes with carbon-fiber plate and responsive foam midsole.', issues:0 },
@@ -1825,11 +1812,11 @@ const SEED_ISSUES = [
   { id:'ISS-0003', productId:'PRD-0003', productName:'Verdant Standing Desk', type:'Missing Part', desc:'Assembly bag missing M6 bolts (6 required). Customer unable to complete build.', sev:'high', date:'Jun 7, 2025', status:'Open', category:'Furniture' },
   { id:'ISS-0004', productId:'PRD-0005', productName:'CoreChef Air Fryer 6L', type:'Safety Concern', desc:'Unit trips household fuse on 13A circuit after 10 minutes continuous use.', sev:'critical', date:'Jun 5, 2025', status:'Open', category:'Home & Garden' },
   { id:'ISS-0005', productId:'PRD-0010', productName:'CloudPillow Memory Foam', type:'Defect / Quality', desc:'Bamboo cover develops pilling after 3 machine washes.', sev:'low', date:'Jun 3, 2025', status:'Open', category:'Home & Garden' },
-  { id:'ISS-0006', productId:'PRD-0011', productName:'PixelCam 4K Action Cam', type:'Performance', desc:'EIS stabilisation disabled automatically in temperatures below 10°C.', sev:'high', date:'May 30, 2025', status:'Open', category:'Electronics' },
+  { id:'ISS-0006', productId:'PRD-0011', productName:'PixelCam 4K Action Cam', type:'Performance', desc:'EIS stabilisation disabled automatically in temperatures below 10Â°C.', sev:'high', date:'May 30, 2025', status:'Open', category:'Electronics' },
   { id:'ISS-0007', productId:'PRD-0011', productName:'PixelCam 4K Action Cam', type:'Defect / Quality', desc:'Waterproof seal on battery door fails at depths greater than 1m (rated to 10m).', sev:'critical', date:'May 28, 2025', status:'Open', category:'Electronics' },
   { id:'ISS-0008', productId:'PRD-0011', productName:'PixelCam 4K Action Cam', type:'Labeling Error', desc:'Box states "4K 120fps" but actual maximum is 4K/60fps.', sev:'medium', date:'May 25, 2025', status:'Open', category:'Electronics' },
   { id:'ISS-0009', productId:'PRD-0015', productName:'ThermoKeg 1L Flask', type:'Shipping Damage', desc:'Lid gasket arrives cracked in approx 15% of shipments from warehouse B.', sev:'medium', date:'May 22, 2025', status:'Open', category:'Home & Garden' },
-  { id:'ISS-0010', productId:'PRD-0018', productName:'SolarCharger 20W Panel', type:'Performance', desc:'Actual output measured at 11–13W under optimal conditions, not the stated 20W.', sev:'high', date:'May 20, 2025', status:'Open', category:'Electronics' },
+  { id:'ISS-0010', productId:'PRD-0018', productName:'SolarCharger 20W Panel', type:'Performance', desc:'Actual output measured at 11â€“13W under optimal conditions, not the stated 20W.', sev:'high', date:'May 20, 2025', status:'Open', category:'Electronics' },
   { id:'ISS-0011', productId:'PRD-0018', productName:'SolarCharger 20W Panel', type:'Defect / Quality', desc:'USB-C port plastic surround cracks after repeated plug cycles.', sev:'medium', date:'May 18, 2025', status:'Open', category:'Electronics' },
 ];
 
@@ -1851,12 +1838,12 @@ function init() {
   updateAll();
 }
 
-// ══════════════════════════════════════════════════════════════
+// â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 //  ML ENGINE
 //  Learns patterns from resolved field cases.
 //  Pattern key = issueType + '|' + category
 //  Stores: fix examples, avg days, confidence score
-// ══════════════════════════════════════════════════════════════
+// â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 function mlLearnFromCases() {
   mlPatterns = {};
   fieldCases.forEach(function(c){
@@ -1928,8 +1915,8 @@ function openResolveModal(issueId) {
   if (!issue) return;
   document.getElementById('resolve-issue-id').value = issueId;
   document.getElementById('resolve-issue-preview').innerHTML =
-    '<strong>' + issue.productName + '</strong> · ' + issue.type +
-    ' · <span class="pill ' + ({low:'green',medium:'blue',high:'amber',critical:'red'}[issue.sev]||'blue') + '" style="font-size:10px">' + issue.sev + '</span>' +
+    '<strong>' + issue.productName + '</strong> Â· ' + issue.type +
+    ' Â· <span class="pill ' + ({low:'green',medium:'blue',high:'amber',critical:'red'}[issue.sev]||'blue') + '" style="font-size:10px">' + issue.sev + '</span>' +
     '<div style="margin-top:6px;font-size:12px">' + issue.desc + '</div>';
   document.getElementById('resolve-fix').value = '';
   document.getElementById('resolve-eng').value = currentUser ? currentUser.name : '';
@@ -1996,7 +1983,7 @@ function resolveIssue() {
   updateIssueCount();
   renderProductGrid();
   setTimeout(renderCharts, 50);
-  showToast('✦ Case ' + fc.id + ' logged · ML engine updated', 'purple');
+  showToast('âœ¦ Case ' + fc.id + ' logged Â· ML engine updated', 'purple');
 }
 
 function updateMLStats() {
@@ -2018,19 +2005,19 @@ function renderMLInsights() {
   if (!container) return;
   const patterns = Object.values(mlPatterns);
   if (!patterns.length) {
-    container.innerHTML = '<div style="color:var(--ink-muted);font-size:13px;text-align:center;padding:20px">No patterns yet — resolve issues to begin learning.</div>';
+    container.innerHTML = '<div style="color:var(--ink-muted);font-size:13px;text-align:center;padding:20px">No patterns yet â€” resolve issues to begin learning.</div>';
     return;
   }
-  const icons = { 'Performance':'⚡', 'Defect / Quality':'🔧', 'Missing Part':'📦', 'Shipping Damage':'🚚', 'Labeling Error':'🏷️', 'Safety Concern':'⚠️', 'Wrong Item':'❌', 'Other':'💡' };
+  const icons = { 'Performance':'âš¡', 'Defect / Quality':'ðŸ”§', 'Missing Part':'ðŸ“¦', 'Shipping Damage':'ðŸšš', 'Labeling Error':'ðŸ·ï¸', 'Safety Concern':'âš ï¸', 'Wrong Item':'âŒ', 'Other':'ðŸ’¡' };
   container.innerHTML = patterns.sort(function(a,b){ return b.count-a.count; }).map(function(p){
-    const icon = icons[p.type] || '💡';
+    const icon = icons[p.type] || 'ðŸ’¡';
     const confFill = p.confidence;
     return '<div class="ml-insight">'
       + '<div class="ml-insight-icon">' + icon + '</div>'
       + '<div class="ml-insight-body">'
       + '<div class="ml-insight-title">' + p.type + ' in ' + p.category + '</div>'
-      + '<div class="ml-insight-sub">' + p.bestFix.slice(0,120) + (p.bestFix.length>120?'…':'') + '</div>'
-      + '<div class="ml-insight-sub" style="margin-top:4px">Root cause: <strong style="color:var(--ink)">' + p.topRootCause + '</strong> · Avg fix: <strong style="color:var(--ink)">' + p.avgDays + 'd</strong> · ' + p.count + ' case' + (p.count>1?'s':'') + '</div>'
+      + '<div class="ml-insight-sub">' + p.bestFix.slice(0,120) + (p.bestFix.length>120?'â€¦':'') + '</div>'
+      + '<div class="ml-insight-sub" style="margin-top:4px">Root cause: <strong style="color:var(--ink)">' + p.topRootCause + '</strong> Â· Avg fix: <strong style="color:var(--ink)">' + p.avgDays + 'd</strong> Â· ' + p.count + ' case' + (p.count>1?'s':'') + '</div>'
       + '<div class="ml-confidence">'
       + '<div class="ml-conf-bar"><div class="ml-conf-fill" style="width:' + confFill + '%"></div></div>'
       + '<span class="ml-conf-label">' + confFill + '% confidence</span>'
@@ -2054,7 +2041,7 @@ function renderMLPatternsTable() {
     return '<tr>'
       + '<td style="font-weight:600">' + p.type + '</td>'
       + '<td class="dim">' + p.category + '</td>'
-      + '<td style="max-width:220px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:var(--ink-dim);font-size:12px">' + p.bestFix.slice(0,60) + '…</td>'
+      + '<td style="max-width:220px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:var(--ink-dim);font-size:12px">' + p.bestFix.slice(0,60) + 'â€¦</td>'
       + '<td><span style="color:' + confColor + ';font-weight:700">' + p.confidence + '%</span></td>'
       + '<td style="color:var(--purple)">' + p.count + '</td>'
       + '<td class="dim">' + p.avgDays + 'd</td>'
@@ -2138,9 +2125,9 @@ function renderMLCharts() {
   }
 }
 
-// ══════════════════════════════════════════════════════════════
+// â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 //  SECTION ROUTING
-// ══════════════════════════════════════════════════════════════
+// â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 function showSection(id) {
   document.querySelectorAll('.section').forEach(function(s){ s.classList.remove('active'); });
   document.querySelectorAll('.nav-item').forEach(function(n){ n.classList.remove('active'); });
@@ -2156,15 +2143,15 @@ function showSection(id) {
   if (id === 'fieldcases')  renderFieldCasesTable();
 }
 
-// ══════════════════════════════════════════════════════════════
+// â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 //  UI HELPERS
-// ══════════════════════════════════════════════════════════════
+// â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 function showToast(msg, type) {
   type = type || 'success';
-  const icons = { success:'✓', error:'⚡', purple:'✦' };
+  const icons = { success:'âœ“', error:'âš¡', purple:'âœ¦' };
   const t = document.getElementById('toast');
   document.getElementById('toast-msg').textContent = msg;
-  document.getElementById('toast-icon').textContent = icons[type] || '✓';
+  document.getElementById('toast-icon').textContent = icons[type] || 'âœ“';
   t.className = 'toast show ' + type;
   setTimeout(function(){ t.classList.remove('show'); }, 3400);
 }
@@ -2193,35 +2180,108 @@ function filterIssueTab(tab, el) {
   if (el) el.classList.add('active');
   renderIssuesTable();
 }
-
-// ══════════════════════════════════════════════════════════════
-//  PRODUCTS
-// ══════════════════════════════════════════════════════════════
+// PRODUCTS AND MISSING RENDERERS - repaired from truncated export
 function getFilteredProducts() {
-  const q = (document.getElementById('product-search')||{}).value ? document.getElementById('product-search').value.toLowerCase() : '';
+  const search = document.getElementById('product-search');
+  const q = search && search.value ? search.value.toLowerCase() : '';
   const activePill = document.querySelector('.cat-pill.active');
-  const activeCat  = activePill ? activePill.dataset.cat : '';
+  const activeCat = activePill ? activePill.dataset.cat : '';
   return products.filter(function(p){
-    const matchQ   = !q || p.name.toLowerCase().includes(q) || p.category.toLowerCase().includes(q) || (p.sku||'').toLowerCase().includes(q);
+    const matchQ = !q || p.name.toLowerCase().includes(q) || p.category.toLowerCase().includes(q) || (p.sku || '').toLowerCase().includes(q);
     const matchCat = !activeCat || p.category === activeCat;
     const matchFilter =
-      catalogFilter === 'all'      ? true :
-      catalogFilter === 'instock'  ? p.stock > 10 :
-      catalogFilter === 'issues'   ? p.issues > 0 :
+      catalogFilter === 'all' ? true :
+      catalogFilter === 'instock' ? p.stock > 10 :
+      catalogFilter === 'issues' ? p.issues > 0 :
       catalogFilter === 'lowstock' ? (p.stock > 0 && p.stock <= 20) : true;
     return matchQ && matchCat && matchFilter;
   });
 }
 
+function money(n) { return '$' + Number(n || 0).toLocaleString(undefined, { maximumFractionDigits: 0 }); }
+function sevClass(sev) { return ({ low:'green', medium:'blue', high:'amber', critical:'red' }[sev] || 'blue'); }
+function statusClass(status) { return status === 'Low Stock' ? 'amber' : (status === 'Inactive' || status === 'Discontinued') ? 'red' : 'green'; }
+
+function updateAll() {
+  updateIssueCount();
+  updateDashboardStats();
+  renderRecentIssues();
+  renderSalesTable();
+  renderIssuesTable();
+  renderTimeline();
+  renderCatPills();
+  renderProductGrid();
+  populateIssueProducts();
+  renderFieldCasesTable();
+  updateMLStats();
+  renderMLInsights();
+  renderMLPatternsTable();
+}
+
+function updateDashboardStats() {
+  const revenue = products.reduce(function(sum,p){ return sum + (Number(p.revenue) || 0); }, 0);
+  const openIssues = issues.filter(function(i){ return i.status !== 'Resolved'; }).length;
+  const set = function(id, val){ const el = document.getElementById(id); if (el) el.textContent = val; };
+  set('d-products', products.length);
+  set('d-revenue', money(revenue));
+  set('d-issues', openIssues);
+  set('d-patterns', Object.keys(mlPatterns).length);
+}
+
+function updateIssueCount() {
+  const el = document.getElementById('issue-count');
+  if (el) el.textContent = issues.filter(function(i){ return i.status !== 'Resolved'; }).length;
+}
+
+function renderRecentIssues() {
+  const tbody = document.getElementById('recent-issues-table');
+  if (!tbody) return;
+  const recent = issues.slice(0, 6);
+  tbody.innerHTML = recent.map(function(i){
+    return '<tr><td style="font-weight:600">' + i.productName + '</td><td class="dim">' + i.type + '</td><td><span class="pill ' + sevClass(i.sev) + '">' + i.sev + '</span></td><td class="dim">' + i.date + '</td></tr>';
+  }).join('') || '<tr><td colspan="4" style="text-align:center;color:var(--ink-muted);padding:24px">No issues logged.</td></tr>';
+}
+
+function renderSalesTable() {
+  const tbody = document.getElementById('sales-table');
+  if (!tbody) return;
+  tbody.innerHTML = products.slice().sort(function(a,b){ return (b.revenue || 0) - (a.revenue || 0); }).map(function(p){
+    return '<tr><td style="font-weight:600">' + p.name + '</td><td class="dim">' + p.category + '</td><td>' + money(p.revenue) + '</td><td class="dim">' + p.stock + '</td><td><span class="pill ' + statusClass(p.status) + '">' + p.status + '</span></td></tr>';
+  }).join('');
+}
+
+function renderIssuesTable() {
+  const tbody = document.getElementById('issues-table');
+  if (!tbody) return;
+  const qEl = document.getElementById('issue-search');
+  const q = qEl && qEl.value ? qEl.value.toLowerCase() : '';
+  let list = issues.filter(function(i){
+    const matchesTab = currentIssueTab === 'all' || (currentIssueTab === 'resolved' ? i.status === 'Resolved' : i.sev === currentIssueTab);
+    const matchesQ = !q || i.productName.toLowerCase().includes(q) || i.type.toLowerCase().includes(q) || i.desc.toLowerCase().includes(q);
+    return matchesTab && matchesQ;
+  });
+  tbody.innerHTML = list.map(function(i){
+    const action = i.status === 'Resolved' ? '<span class="pill green">Resolved</span>' : '<button class="btn btn-green" onclick="openResolveModal(\'' + i.id + '\')">Resolve</button>';
+    return '<tr><td style="font-family:monospace;font-size:11px;color:var(--ink-dim)">' + i.id + '</td><td style="font-weight:600">' + i.productName + '</td><td class="dim">' + i.type + '</td><td style="max-width:330px;color:var(--ink-dim);font-size:12px">' + i.desc + '</td><td><span class="pill ' + sevClass(i.sev) + '">' + i.sev + '</span></td><td class="dim">' + i.date + '</td><td>' + action + '</td></tr>';
+  }).join('') || '<tr><td colspan="7" style="text-align:center;color:var(--ink-muted);padding:32px">No issues match this view.</td></tr>';
+}
+
+function renderTimeline() {
+  const el = document.getElementById('issue-timeline');
+  if (!el) return;
+  const latest = issues.slice(0, 5);
+  el.innerHTML = latest.map(function(i){
+    return '<div class="timeline-item"><div class="timeline-dot ' + sevClass(i.sev) + '"></div><div><div style="font-weight:600;font-size:12px">' + i.productName + '</div><div style="color:var(--ink-dim);font-size:12px">' + i.type + ' · ' + i.date + '</div></div></div>';
+  }).join('') || '<div style="color:var(--ink-muted);font-size:13px">No issue activity yet.</div>';
+}
+
 function renderCatPills() {
-  const cats = [...new Set(products.map(function(p){ return p.category; }))].sort();
   const container = document.getElementById('cat-filters');
   if (!container) return;
   const activeEl = document.querySelector('.cat-pill.active');
   const activeCat = activeEl ? activeEl.dataset.cat : '';
-  container.innerHTML = cats.map(function(c){
-    return '<div class="cat-pill' + (c===activeCat?' active':'') + '" data-cat="' + c + '" onclick="toggleCatFilter(this)">' + c + '</div>';
-  }).join('');
+  const cats = Array.from(new Set(products.map(function(p){ return p.category; }))).sort();
+  container.innerHTML = cats.map(function(c){ return '<div class="cat-pill' + (c === activeCat ? ' active' : '') + '" data-cat="' + c + '" onclick="toggleCatFilter(this)">' + c + '</div>'; }).join('');
   const dl = document.getElementById('cat-list');
   if (dl) dl.innerHTML = cats.map(function(c){ return '<option value="' + c + '">'; }).join('');
 }
@@ -2236,30 +2296,147 @@ function toggleCatFilter(el) {
 function renderProductGrid() {
   const list = getFilteredProducts();
   const countEl = document.getElementById('product-count-label');
-  if (countEl) countEl.textContent = products.length + ' products in catalog' + (list.length!==products.length?' · '+list.length+' shown':'');
-
+  if (countEl) countEl.textContent = products.length + ' products in catalog' + (list.length !== products.length ? ' · ' + list.length + ' shown' : '');
   const grid = document.getElementById('product-grid');
-  if (!list.length) {
-    grid.innerHTML = '<div class="empty-state" style="grid-column:1/-1"><div class="empty-icon">◫</div><div class="empty-title">No products found</div><div class="empty-sub">Try adjusting your search or filter</div></div>';
-  } else {
+  const body = document.getElementById('product-list-body');
+  if (grid) {
     grid.innerHTML = list.map(function(p){
-      const statusCls = p.status==='Low Stock'?'amber':(p.status==='Inactive'||p.status==='Discontinued')?'red':'green';
-      const icon = CAT_ICONS[p.category]||'📦';
-      const stockColor = p.stock===0?'color:var(--fault)':p.stock<=20?'color:var(--amber)':'';
-      const stockLabel = p.stock===0?'Out of stock':p.stock+' in stock';
-      // ML risk indicator
-      const mlRisk = Object.values(mlPatterns).some(function(pat){ return pat.category===p.category && pat.count>=2; });
+      const icon = CAT_ICONS[p.category] || '□';
       return '<div class="product-card" onclick="showProductDetail(\'' + p.id + '\')">'
-        + (p.issues?'<div class="product-issue-badge">'+p.issues+' issue'+(p.issues>1?'s':'')+'</div>':'')
-        + '<div style="display:flex;gap:12px;align-items:flex-start;margin-bottom:14px">'
-        + '<div style="width:44px;height:44px;border-radius:10px;background:var(--void);display:flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0">' + icon + '</div>'
-        + '<div><div class="product-cat">' + p.category + '</div><div class="product-name">' + p.name + '</div><div class="product-id">' + (p.sku||p.id) + '</div></div>'
-        + '</div>'
-        + '<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px">'
-        + '<span class="product-price">$' + p.price.toFixed(2) + '</span>'
-        + '<span class="product-stock" style="' + stockColor + '">' + stockLabel + '</span>'
-        + '</div>'
-        + '<div style="display:flex;justify-content:space-between;align-items:center">'
-        + '<div style="display:flex;gap:6px;align-items:center">'
-        + '<span class="pill ' + statusCls + '">' + p.status + '</span>'
-        + (mlRisk?'<span class="pill purple"
+        + (p.issues ? '<div class="product-issue-badge">' + p.issues + ' issue' + (p.issues > 1 ? 's' : '') + '</div>' : '')
+        + '<div style="display:flex;gap:12px;align-items:flex-start;margin-bottom:14px"><div style="width:44px;height:44px;border-radius:10px;background:var(--void);display:flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0">' + icon + '</div><div><div class="product-cat">' + p.category + '</div><div class="product-name">' + p.name + '</div><div class="product-id">' + (p.sku || p.id) + '</div></div></div>'
+        + '<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px"><span class="product-price">$' + Number(p.price || 0).toFixed(2) + '</span><span class="product-stock">' + p.stock + ' in stock</span></div>'
+        + '<span class="pill ' + statusClass(p.status) + '">' + p.status + '</span></div>';
+    }).join('') || '<div class="empty-state" style="grid-column:1/-1"><div class="empty-title">No products found</div><div class="empty-sub">Try adjusting your search or filter</div></div>';
+  }
+  if (body) {
+    body.innerHTML = list.map(function(p){ return '<tr><td style="font-weight:600">' + p.name + '</td><td class="dim">' + (p.sku || p.id) + '</td><td>' + p.category + '</td><td>$' + Number(p.price || 0).toFixed(2) + '</td><td>' + p.stock + '</td><td><span class="pill ' + statusClass(p.status) + '">' + p.status + '</span></td><td>' + (p.issues || 0) + '</td></tr>'; }).join('');
+  }
+}
+
+function showProductDetail(id) {
+  const p = products.find(function(x){ return x.id === id; });
+  if (!p) return;
+  document.getElementById('pd-modal-title').textContent = p.name;
+  document.getElementById('pd-modal-body').innerHTML = '<div class="product-cat">' + p.category + '</div><p style="margin:12px 0;color:var(--ink-dim)">' + (p.description || 'No description.') + '</p><div class="stats-row" style="grid-template-columns:repeat(3,1fr);margin:0"><div class="stat-card blue"><div class="stat-label">Price</div><div class="stat-val blue" style="font-size:22px">$' + Number(p.price || 0).toFixed(2) + '</div></div><div class="stat-card green"><div class="stat-label">Stock</div><div class="stat-val green" style="font-size:22px">' + p.stock + '</div></div><div class="stat-card red"><div class="stat-label">Issues</div><div class="stat-val red" style="font-size:22px">' + (p.issues || 0) + '</div></div></div>';
+  document.getElementById('product-detail-modal').classList.add('show');
+}
+
+function populateIssueProducts() {
+  const sel = document.getElementById('issue-product');
+  if (!sel) return;
+  sel.innerHTML = '<option value="">Select product...</option>' + products.map(function(p){ return '<option value="' + p.id + '">' + p.name + '</option>'; }).join('');
+}
+
+function openAddProduct() {
+  document.getElementById('ap-edit-id').value = '';
+  ['ap-name','ap-sku','ap-cat','ap-price','ap-stock','ap-revenue','ap-desc'].forEach(function(id){ const el = document.getElementById(id); if (el) el.value = ''; });
+  document.getElementById('ap-status').value = 'Active';
+  document.getElementById('add-product-modal').classList.add('show');
+}
+
+function saveProduct() {
+  const name = document.getElementById('ap-name').value.trim();
+  const price = parseFloat(document.getElementById('ap-price').value);
+  if (!name || isNaN(price)) { showToast('Product name and price are required', 'error'); return; }
+  const p = {
+    id: 'PRD-' + String(products.length + 1).padStart(4, '0'),
+    name: name,
+    sku: document.getElementById('ap-sku').value.trim() || ('SKU-' + Date.now()),
+    category: document.getElementById('ap-cat').value.trim() || 'General',
+    price: price,
+    stock: parseInt(document.getElementById('ap-stock').value, 10) || 0,
+    revenue: parseFloat(document.getElementById('ap-revenue').value) || 0,
+    status: document.getElementById('ap-status').value,
+    description: document.getElementById('ap-desc').value.trim(),
+    issues: 0
+  };
+  products.unshift(p);
+  closeModal('add-product-modal');
+  updateAll();
+  showToast('Product added', 'success');
+}
+
+function openReportModal() {
+  populateIssueProducts();
+  document.getElementById('issue-desc').value = '';
+  document.getElementById('ml-issue-suggestion').classList.remove('show');
+  document.getElementById('report-modal').classList.add('show');
+}
+
+function submitIssue() {
+  const pid = document.getElementById('issue-product').value;
+  const product = products.find(function(p){ return p.id === pid; });
+  const desc = document.getElementById('issue-desc').value.trim();
+  if (!product || !desc) { showToast('Select a product and describe the issue', 'error'); return; }
+  const sev = document.querySelector('input[name="sev"]:checked').value;
+  const issue = {
+    id: 'ISS-' + String(issues.length + 1).padStart(4, '0'),
+    productId: product.id,
+    productName: product.name,
+    type: document.getElementById('issue-type').value,
+    desc: desc,
+    sev: sev,
+    date: new Date().toLocaleDateString('en-US', { month:'short', day:'numeric', year:'numeric' }),
+    status: 'Open',
+    category: product.category
+  };
+  issues.unshift(issue);
+  product.issues = (product.issues || 0) + 1;
+  closeModal('report-modal');
+  updateAll();
+  showToast('Issue reported', 'success');
+}
+
+function clearPreview() {
+  const input = document.getElementById('file-input');
+  if (input) input.value = '';
+  showToast('Preview cleared', 'success');
+}
+function handleFile() { showToast('File preview is unavailable in this repaired local copy', 'error'); }
+function importData() { showToast('Import is unavailable in this repaired local copy', 'error'); }
+
+function destroyChart(key) {
+  if (charts[key]) { charts[key].destroy(); delete charts[key]; }
+}
+function chartOrSkip(id, key, config) {
+  if (typeof Chart === 'undefined') return;
+  const el = document.getElementById(id);
+  if (!el) return;
+  destroyChart(key);
+  charts[key] = new Chart(el.getContext('2d'), config);
+}
+function renderCharts() {
+  const cats = Array.from(new Set(products.map(function(p){ return p.category; })));
+  const catRevenue = cats.map(function(c){ return products.filter(function(p){ return p.category === c; }).reduce(function(s,p){ return s + (p.revenue || 0); }, 0); });
+  const sevCounts = ['low','medium','high','critical'].map(function(s){ return issues.filter(function(i){ return i.sev === s && i.status !== 'Resolved'; }).length; });
+  chartOrSkip('chart-sales', 'sales', { type:'bar', data:{ labels:cats, datasets:[{ data:catRevenue, backgroundColor:COLORS, borderRadius:4 }] }, options:{ plugins:{ legend:{ display:false } }, responsive:true, maintainAspectRatio:false, scales:{ x:{ ticks:{ color:'#7A8394' }, grid:{ color:'#252931' } }, y:{ ticks:{ color:'#7A8394' }, grid:{ color:'#252931' } } } } });
+  chartOrSkip('chart-issues', 'issues', { type:'doughnut', data:{ labels:['Low','Medium','High','Critical'], datasets:[{ data:sevCounts, backgroundColor:['#22C55E','#3B82F6','#F5A623','#FF3D2E'], borderWidth:0 }] }, options:{ plugins:{ legend:{ position:'bottom', labels:{ color:'#7A8394' } } }, responsive:true, maintainAspectRatio:false } });
+  chartOrSkip('chart-stock', 'stock', { type:'bar', data:{ labels:products.slice(0,8).map(function(p){ return p.name.slice(0,12); }), datasets:[{ data:products.slice(0,8).map(function(p){ return p.stock; }), backgroundColor:'#3B82F6', borderRadius:4 }] }, options:{ plugins:{ legend:{ display:false } }, responsive:true, maintainAspectRatio:false, scales:{ x:{ ticks:{ color:'#7A8394' }, grid:{ color:'#252931' } }, y:{ ticks:{ color:'#7A8394' }, grid:{ color:'#252931' } } } } });
+  chartOrSkip('chart-types', 'types', { type:'pie', data:{ labels:cats, datasets:[{ data:cats.map(function(c){ return products.filter(function(p){ return p.category === c; }).length; }), backgroundColor:COLORS, borderWidth:0 }] }, options:{ plugins:{ legend:{ position:'bottom', labels:{ color:'#7A8394', boxWidth:10, font:{ size:10 } } } }, responsive:true, maintainAspectRatio:false } });
+  renderIssueCharts();
+  renderSalesCharts();
+  renderMLCharts();
+}
+function renderIssueCharts() { chartOrSkip('chart-issues2', 'issues2', { type:'bar', data:{ labels:['Low','Medium','High','Critical'], datasets:[{ data:['low','medium','high','critical'].map(function(s){ return issues.filter(function(i){ return i.sev === s; }).length; }), backgroundColor:['#22C55E','#3B82F6','#F5A623','#FF3D2E'], borderRadius:4 }] }, options:{ plugins:{ legend:{ display:false } }, responsive:true, maintainAspectRatio:false, scales:{ x:{ ticks:{ color:'#7A8394' }, grid:{ color:'#252931' } }, y:{ ticks:{ color:'#7A8394' }, grid:{ color:'#252931' } } } } }); }
+function renderSalesCharts() { chartOrSkip('chart-cat', 'cat', { type:'bar', data:{ labels:products.slice(0,10).map(function(p){ return p.name.slice(0,14); }), datasets:[{ data:products.slice(0,10).map(function(p){ return p.revenue || 0; }), backgroundColor:COLORS, borderRadius:4 }] }, options:{ plugins:{ legend:{ display:false } }, responsive:true, maintainAspectRatio:false, scales:{ x:{ ticks:{ color:'#7A8394' }, grid:{ color:'#252931' } }, y:{ ticks:{ color:'#7A8394' }, grid:{ color:'#252931' } } } } }); chartOrSkip('chart-mix', 'mix', { type:'doughnut', data:{ labels:['Active','Low Stock','Inactive'], datasets:[{ data:['Active','Low Stock','Inactive'].map(function(s){ return products.filter(function(p){ return p.status === s; }).length; }), backgroundColor:['#22C55E','#F5A623','#FF3D2E'], borderWidth:0 }] }, options:{ plugins:{ legend:{ position:'bottom', labels:{ color:'#7A8394' } } }, responsive:true, maintainAspectRatio:false } }); }
+
+function setupAuthTypeToggle() {
+  const update = function(){
+    const checked = document.querySelector('input[name="acc-type"]:checked');
+    const field = document.getElementById('reg-company-field');
+    if (field) field.style.display = checked && checked.value === 'company' ? 'block' : 'none';
+  };
+  document.querySelectorAll('input[name="acc-type"]').forEach(function(r){ r.addEventListener('change', update); });
+  update();
+}
+
+document.addEventListener('DOMContentLoaded', async function(){
+  initDefaultUsers();
+  setupAuthTypeToggle();
+  const ok = await tryAutoLogin();
+  if (ok) bootApp();
+});
+</script>
+</body>
+</html>
